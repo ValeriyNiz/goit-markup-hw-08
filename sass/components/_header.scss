@@ -1,0 +1,21 @@
+.header {
+  border-bottom: solid 1px rgba(236, 236, 236, 1);
+
+  &__div {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo__header {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #000000;
+
+  &--blue {
+    color: var(--accent-color);
+  }
+}
