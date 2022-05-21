@@ -18,47 +18,57 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -15px;
   }
 
   &__item {
-    width: 210px;
+    width: 50%;
     height: 92px;
-
-    &:nth-child(-n + 4) {
-      margin-bottom: 30px;
-    }
-
-    &:nth-child(2n + 1) {
-      margin-right: 30px;
-    }
+    padding: 0 15px;
+    margin-bottom: 30px;
 
     @media screen and (min-width: 768px) {
-      width: 226px;
-
-      &:nth-child(even) {
-        margin-right: 30px;
-      }
-
-      &:nth-child(3n + 3) {
-        margin-right: 0;
-      }
-
-      &:nth-child(4) {
-        margin-bottom: 0;
-      }
+      width: 33.3333%;
     }
 
     @media screen and (min-width: 1200px) {
-      width: 170px;
-
-      &:nth-child(-n + 4) {
-        margin-bottom: 0;
-      }
-
-      &:nth-child(-n + 5) {
-        margin-right: 30px;
-      }
+      width: 16.6666%;
     }
+    // &:nth-child(-n + 4) {
+    //   margin-bottom: 30px;
+    // }
+
+    // &:nth-child(2n + 1) {
+    //   margin-right: 30px;
+    // }
+
+    // @media screen and (min-width: 768px) {
+    //   width: 226px;
+
+    //   &:nth-child(even) {
+    //     margin-right: 30px;
+    //   }
+
+    //   &:nth-child(3n + 3) {
+    //     margin-right: 0;
+    //   }
+
+    //   &:nth-child(4) {
+    //     margin-bottom: 0;
+    //   }
+    // }
+
+    // @media screen and (min-width: 1200px) {
+    //   width: 170px;
+
+    //   &:nth-child(-n + 4) {
+    //     margin-bottom: 0;
+    //   }
+
+    //   &:nth-child(-n + 5) {
+    //     margin-right: 30px;
+    //   }
+    // }
   }
 
   &__icon {

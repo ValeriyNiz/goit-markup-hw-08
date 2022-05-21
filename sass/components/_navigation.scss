@@ -1,5 +1,13 @@
 .navigation {
-  margin-left: 93px;
+  margin-left: 88px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .site-nav {
@@ -58,28 +66,40 @@
 //---------------------Contacts--------------------
 
 .contacts-nav {
-  display: flex;
+  display: block;
   margin-left: auto;
 
-  &__item + &__item {
-    margin-left: 50px;
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 
-  &__item:last-child {
-    margin-right: 0;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
+  &__item {
+    @media screen and (min-width: 1200px) {
+      &:first-child {
+        margin-right: 30px;
+      }
+    }
   }
 
   &__icon {
     fill: currentColor;
-    margin-right: 10px;
+    margin-right: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+    }
   }
 
   &__link {
     display: flex;
     align-items: center;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     padding-top: 10px;
@@ -93,6 +113,13 @@
       & .contacts-nav__icon {
         fill: var(--accent-color);
       }
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.14;
+      padding-top: 32px;
+      padding-bottom: 32px;
     }
   }
 }
