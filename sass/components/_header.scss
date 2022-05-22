@@ -5,7 +5,10 @@
     display: flex;
     align-items: center;
     position: relative;
-    width: 100%;
+
+    @media screen and (max-width: 1199px) {
+      width: 100%;
+    }
   }
 }
 
@@ -33,7 +36,7 @@
 }
 
 .mob-menu {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -43,6 +46,7 @@
   padding-top: 10px;
   padding-right: 15px;
   background-color: var(--primary-white-color);
+  z-index: 1;
 
   &__link {
     font-weight: 500;
@@ -103,6 +107,7 @@
 .mob-socials {
   &__list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__item {
