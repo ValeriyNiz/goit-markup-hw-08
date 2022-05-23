@@ -975,6 +975,14 @@ img {
 .filtres__content img {
   width: 100%;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .filtres__content {
+    width: 50%;
+  }
+  .filtres__content:first-child .filtres__meta {
+    height: 146px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .filtres__content {
     width: 33.3333%;
