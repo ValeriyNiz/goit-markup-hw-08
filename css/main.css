@@ -139,6 +139,9 @@ img {
 .mob-menu__link:hover, .mob-menu__link:focus {
   color: var(--accent-color);
 }
+.mob-menu__link.current {
+  color: var(--accent-color);
+}
 .mob-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }

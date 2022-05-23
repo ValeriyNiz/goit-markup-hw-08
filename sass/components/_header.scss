@@ -62,6 +62,12 @@
     &:focus {
       color: var(--accent-color);
     }
+
+        &.current {
+          color: var(--accent-color);
+        }
+
+    
   }
 
   &__item {
