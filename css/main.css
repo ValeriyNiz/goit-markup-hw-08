@@ -975,14 +975,6 @@ img {
 .filtres__content img {
   width: 100%;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .filtres__content {
-    width: 50%;
-  }
-  .filtres__content:first-child .filtres__meta {
-    height: 146px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .filtres__content {
     width: 33.3333%;
@@ -1002,7 +994,7 @@ img {
   letter-spacing: 0.03em;
   padding: 63px 24px;
   height: 100%;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filtres__link {
