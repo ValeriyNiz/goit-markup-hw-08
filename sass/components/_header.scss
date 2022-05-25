@@ -6,9 +6,9 @@
     align-items: center;
     position: relative;
 
-    @media screen and (max-width: 1199px) {
-      width: 100%;
-    }
+    // @media screen and (max-width: 1199px) {
+    //   width: 100%;
+    // }
   }
 }
 
@@ -63,11 +63,9 @@
       color: var(--accent-color);
     }
 
-        &.current {
-          color: var(--accent-color);
-        }
-
-    
+    &.current {
+      color: var(--accent-color);
+    }
   }
 
   &__item {

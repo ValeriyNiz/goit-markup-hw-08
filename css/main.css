@@ -83,11 +83,6 @@ img {
   align-items: center;
   position: relative;
 }
-@media screen and (max-width: 1199px) {
-  .header__div {
-    width: 100%;
-  }
-}
 
 .logo__header {
   font-family: "Raleway";
@@ -452,10 +447,12 @@ img {
   overflow: hidden;
 }
 
-.features {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -15px;
+@media screen and (min-width: 768px) {
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
 }
 .features__title {
   font-weight: 700;
@@ -472,13 +469,12 @@ img {
   }
 }
 .features__item {
-  width: 100%;
-  min-height: 101px;
-  padding: 0 15px;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .features__item {
+    padding: 0 15px;
+    margin-bottom: 30px;
     width: 50%;
   }
 }
@@ -737,7 +733,6 @@ img {
   .footer__contacts {
     margin-left: 76px;
     margin-right: 165px;
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -799,7 +794,7 @@ img {
 }
 
 .socials {
-  margin: 60px 0;
+  margin-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .socials {
@@ -810,8 +805,6 @@ img {
 @media screen and (min-width: 1200px) {
   .socials {
     margin-left: 70px;
-    margin-top: 0;
-    margin-bottom: 0;
   }
 }
 .socials__title {
@@ -846,8 +839,12 @@ img {
   fill: var(--primary-white-color);
 }
 
+.subscription {
+  margin-top: 60px;
+}
 @media screen and (min-width: 1200px) {
   .subscription {
+    margin-top: 0;
     margin-left: 93px;
   }
 }
@@ -962,18 +959,26 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.filtres__catalog {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -15px;
+@media screen and (min-width: 768px) {
+  .filtres__catalog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  .filtres__catalog:first-child .filtres__meta {
+    height: 146px;
+  }
 }
 .filtres__content {
-  width: 100%;
-  padding: 0 15px;
   margin-bottom: 30px;
 }
 .filtres__content img {
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .filtres__content {
+    padding: 0 15px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .filtres__content {

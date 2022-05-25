@@ -1,7 +1,9 @@
 .features {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -15px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
 
   &__title {
     font-weight: 700;
@@ -18,12 +20,13 @@
   }
 
   &__item {
-    width: 100%;
-    min-height: 101px;
-    padding: 0 15px;
+    // width: 100%;
+    // min-height: 101px;
     margin-bottom: 30px;
 
     @media screen and (min-width: 768px) {
+      padding: 0 15px;
+      margin-bottom: 30px;
       width: 50%;
     }
 
