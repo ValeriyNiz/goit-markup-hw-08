@@ -12,6 +12,7 @@
     &__container {
       display: flex;
       align-items: baseline;
+      justify-content: space-around;
     }
   }
 
@@ -24,8 +25,8 @@
 
   &__contacts {
     @media screen and (min-width: 768px) {
-      margin-left: 76px;
-      margin-right: 165px;
+      // margin-left: 76px;
+      // margin-right: 165px;
       // margin-bottom: 60px;
     }
 

@@ -721,18 +721,13 @@ img {
   .footer__container {
     display: flex;
     align-items: baseline;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__content {
     display: flex;
     align-items: baseline;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer__contacts {
-    margin-left: 76px;
-    margin-right: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
