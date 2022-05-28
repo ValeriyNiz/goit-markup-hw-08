@@ -441,11 +441,19 @@ img {
   overflow: hidden;
 }
 
+.features {
+  margin-bottom: -30px;
+}
 @media screen and (min-width: 768px) {
   .features {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -15px;
+    margin-left: -30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    margin-bottom: 0;
   }
 }
 .features__title {
@@ -467,14 +475,15 @@ img {
 }
 @media screen and (min-width: 768px) {
   .features__item {
-    padding: 0 15px;
     margin-bottom: 30px;
-    width: 50%;
+    margin-left: 30px;
+    width: calc(50% - 30px);
   }
 }
 @media screen and (min-width: 1200px) {
   .features__item {
-    width: 25%;
+    width: calc(25% - 30px);
+    margin-bottom: 0;
   }
 }
 .features__text {
@@ -546,13 +555,11 @@ img {
 .team {
   background-color: var(--secondary-bg-color);
 }
-.team__list {
-  display: flex;
-  flex-wrap: wrap;
-}
 @media screen and (min-width: 768px) {
   .team__list {
-    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
   }
 }
 .team__title {
@@ -562,7 +569,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   text-align: center;
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .team__title {
@@ -572,18 +578,18 @@ img {
   }
 }
 .team__overlay {
-  width: 100%;
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 @media screen and (min-width: 768px) {
   .team__overlay {
-    width: 50%;
-    padding: 0 15px;
+    width: calc(50% - 30px);
+    margin-left: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__overlay {
-    width: 25%;
+    width: calc(25% - 30px);
+    margin-top: 0;
   }
 }
 .team__container {
@@ -648,7 +654,6 @@ img {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-bottom: 30px;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
@@ -661,22 +666,23 @@ img {
 .clients__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -15px;
+  margin-left: -30px;
 }
 .clients__item {
-  width: 50%;
+  width: calc(50% - 30px);
   height: 92px;
-  padding: 0 15px;
-  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 @media screen and (min-width: 768px) {
   .clients__item {
-    width: 33.3333%;
+    width: calc(33.3333% - 30px);
   }
 }
 @media screen and (min-width: 1200px) {
   .clients__item {
-    width: 16.6666%;
+    width: calc(16.6666% - 30px);
+    margin-top: 0;
   }
 }
 .clients__icon {
@@ -957,34 +963,33 @@ img {
   .filtres__catalog {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -15px;
+    margin-left: -30px;
+    margin-top: -30px;
   }
   .filtres__catalog:first-child .filtres__meta {
     height: 146px;
   }
 }
 .filtres__content {
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 .filtres__content img {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
   .filtres__content {
-    padding: 0 15px;
+    margin-left: 30px;
+    width: calc(50% - 30px);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .filtres__content {
-    width: 50%;
-  }
   .filtres__content:first-child .filtres__meta {
     height: 146px;
   }
 }
 @media screen and (min-width: 1200px) {
   .filtres__content {
-    width: 33.3333%;
+    width: calc(33.3333% - 30px);
   }
 }
 .filtres__overlay {

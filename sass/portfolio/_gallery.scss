@@ -3,7 +3,9 @@
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
-      margin: 0 -15px;
+      margin-left: -30px;
+      margin-top: -30px;
+      // margin: 0 -15px;
 
       &:first-child .filtres__meta {
         height: 146px;
@@ -13,24 +15,26 @@
 
   &__content {
     // width: 100%;
-    margin-bottom: 30px;
+    margin-top: 30px;
     img {
       width: 100%;
     }
 
     @media screen and (min-width: 768px) {
-      padding: 0 15px;
+      // padding: 0 15px;
+      margin-left: 30px;
+      width: calc(50% - 30px);
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-      width: 50%;
+      // width: 50%;
       &:first-child .filtres__meta {
         height: 146px;
       }
     }
 
     @media screen and (min-width: 1200px) {
-      width: 33.3333%;
+      width: calc(33.3333% - 30px);
     }
   }
 

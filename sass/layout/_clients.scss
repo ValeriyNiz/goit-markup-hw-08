@@ -5,7 +5,7 @@
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     text-align: center;
 
     @media screen and (min-width: 1200px) {
@@ -18,21 +18,26 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -15px;
+    margin-left: -30px;
+    // margin: 0 -15px;
   }
 
   &__item {
-    width: 50%;
+    // width: 50%;
+    width: calc(50% - 30px);
     height: 92px;
-    padding: 0 15px;
-    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    // padding: 0 15px;
+    // margin-bottom: 30px;
 
     @media screen and (min-width: 768px) {
-      width: 33.3333%;
+      width: calc(33.3333% - 30px);
     }
 
     @media screen and (min-width: 1200px) {
-      width: 16.6666%;
+      width: calc(16.6666% - 30px);
+      margin-top: 0;
     }
     // &:nth-child(-n + 4) {
     //   margin-bottom: 30px;
