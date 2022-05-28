@@ -4,6 +4,11 @@
     flex-wrap: wrap;
     margin-bottom: 40px;
 
+    @media screen and (max-width: 767px) {
+      row-gap: 15px;
+      column-gap: 8px;
+    }
+
     @media screen and (min-width: 768px) {
       margin-bottom: 30px;
       flex-wrap: nowrap;
@@ -16,18 +21,9 @@
   }
 
   &__item {
-    &:not(:last-child) {
-      margin-right: 8px;
-    }
-
-    &:nth-child(-n + 3) {
-      margin-bottom: 15px;
-    }
-
     @media screen and (min-width: 768px) {
-      &:nth-child(-n + 4) {
+      &:not(:last-child) {
         margin-right: 8px;
-        margin-bottom: 0;
       }
     }
   }

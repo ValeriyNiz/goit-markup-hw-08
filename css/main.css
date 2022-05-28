@@ -912,6 +912,12 @@ img {
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 767px) {
+  .filtres__list {
+    row-gap: 15px;
+    column-gap: 8px;
+  }
+}
 @media screen and (min-width: 768px) {
   .filtres__list {
     margin-bottom: 30px;
@@ -924,16 +930,9 @@ img {
     margin-bottom: 50px;
   }
 }
-.filtres__item:not(:last-child) {
-  margin-right: 8px;
-}
-.filtres__item:nth-child(-n+3) {
-  margin-bottom: 15px;
-}
 @media screen and (min-width: 768px) {
-  .filtres__item:nth-child(-n+4) {
+  .filtres__item:not(:last-child) {
     margin-right: 8px;
-    margin-bottom: 0;
   }
 }
 .filtres__button {
