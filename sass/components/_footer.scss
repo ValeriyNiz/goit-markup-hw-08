@@ -24,17 +24,17 @@
   }
 
   &__contacts {
-    @media screen and (min-width: 768px) {
-      // margin-left: 76px;
-      // margin-right: 165px;
-      // margin-bottom: 60px;
-    }
+    // @media screen and (min-width: 768px) {
+    //   // margin-left: 76px;
+    //   // margin-right: 165px;
+    //   // margin-bottom: 60px;
+    // }
 
     @media screen and (min-width: 1200px) {
       flex-grow: 1;
-      margin-left: 0;
-      margin-right: 0;
-      margin-bottom: 0;
+      // margin-left: 0;
+      // margin-right: 0;
+      // margin-bottom: 0;
     }
   }
 
